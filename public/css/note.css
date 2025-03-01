@@ -1,0 +1,54 @@
+
+  .card {
+    position: relative;
+  }
+  
+  .join-btn {
+    background-color: #FFA500; /* Orange color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .join-btn:hover {
+    background-color: #ff8c00;
+  }
+  
+  .join-btn span {
+    font-size: 18px;
+  }
+  
+  .note {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    background-color: #d3d3d3; /* Light grey */
+    color: #333;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    width: 180px;
+    text-align: center;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+  
+  .note::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #d3d3d3 transparent;
+  }
+  
