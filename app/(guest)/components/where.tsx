@@ -4,7 +4,7 @@ import { Check } from 'lucide-react';
 
 const Where = () => {
   const [activeSlide, setActiveSlide] = useState(0);
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const handleScroll = () => {
     if (scrollRef.current) {
